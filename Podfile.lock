@@ -1,0 +1,24 @@
+PODS:
+  - Charts (3.3.0):
+    - Charts/Core (= 3.3.0)
+  - Charts/Core (3.3.0)
+
+DEPENDENCIES:
+  - Charts (from `https://github.com/cmmobile/Charts.git`, tag `3.3.4-cm`)
+
+EXTERNAL SOURCES:
+  Charts:
+    :git: https://github.com/cmmobile/Charts.git
+    :tag: 3.3.4-cm
+
+CHECKOUT OPTIONS:
+  Charts:
+    :git: https://github.com/cmmobile/Charts.git
+    :tag: 3.3.4-cm
+
+SPEC CHECKSUMS:
+  Charts: bcd81a359eb40ff7606d198dfcc740032ca184fe
+
+PODFILE CHECKSUM: c0e9c2da9f2954c5895feb9f8b92c0194f14ef5c
+
+COCOAPODS: 1.9.1

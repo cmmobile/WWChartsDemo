@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5ED2BDC82804142E129CFEF6 /* Pods_WWChartsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F833BF93F4812AB56BBDA10E /* Pods_WWChartsDemo.framework */; };
 		9F750AA524888D9700BBCC40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F750AA424888D9700BBCC40 /* AppDelegate.swift */; };
 		9F750AA724888D9700BBCC40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F750AA624888D9700BBCC40 /* SceneDelegate.swift */; };
 		9F750AA924888D9700BBCC40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F750AA824888D9700BBCC40 /* ViewController.swift */; };
 		9F750AAC24888D9700BBCC40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F750AAA24888D9700BBCC40 /* Main.storyboard */; };
 		9F750AAE24888D9B00BBCC40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F750AAD24888D9B00BBCC40 /* Assets.xcassets */; };
 		9F750AB124888D9B00BBCC40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F750AAF24888D9B00BBCC40 /* LaunchScreen.storyboard */; };
+		9F750ABA248891BE00BBCC40 /* L1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F750AB9248891BE00BBCC40 /* L1ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40464C773955B9B09764F1E1 /* Pods-WWChartsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWChartsDemo.debug.xcconfig"; path = "Target Support Files/Pods-WWChartsDemo/Pods-WWChartsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9F750AA124888D9700BBCC40 /* WWChartsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWChartsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F750AA424888D9700BBCC40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F750AA624888D9700BBCC40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		9F750AAD24888D9B00BBCC40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F750AB024888D9B00BBCC40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F750AB224888D9B00BBCC40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F750AB9248891BE00BBCC40 /* L1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L1ViewController.swift; sourceTree = "<group>"; };
+		C34533AEA655F6074A1E36AB /* Pods-WWChartsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWChartsDemo.release.xcconfig"; path = "Target Support Files/Pods-WWChartsDemo/Pods-WWChartsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F833BF93F4812AB56BBDA10E /* Pods_WWChartsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWChartsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED2BDC82804142E129CFEF6 /* Pods_WWChartsDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				9F750AA324888D9700BBCC40 /* WWChartsDemo */,
 				9F750AA224888D9700BBCC40 /* Products */,
+				DFEF7947AF9144D8F9660963 /* Pods */,
+				D413A1104D8441A58CBA431A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +65,7 @@
 		9F750AA324888D9700BBCC40 /* WWChartsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9F750AB8248891B000BBCC40 /* L1 */,
 				9F750AA424888D9700BBCC40 /* AppDelegate.swift */,
 				9F750AA624888D9700BBCC40 /* SceneDelegate.swift */,
 				9F750AA824888D9700BBCC40 /* ViewController.swift */,
@@ -67,6 +77,31 @@
 			path = WWChartsDemo;
 			sourceTree = "<group>";
 		};
+		9F750AB8248891B000BBCC40 /* L1 */ = {
+			isa = PBXGroup;
+			children = (
+				9F750AB9248891BE00BBCC40 /* L1ViewController.swift */,
+			);
+			path = L1;
+			sourceTree = "<group>";
+		};
+		D413A1104D8441A58CBA431A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F833BF93F4812AB56BBDA10E /* Pods_WWChartsDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFEF7947AF9144D8F9660963 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40464C773955B9B09764F1E1 /* Pods-WWChartsDemo.debug.xcconfig */,
+				C34533AEA655F6074A1E36AB /* Pods-WWChartsDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F750AB524888D9B00BBCC40 /* Build configuration list for PBXNativeTarget "WWChartsDemo" */;
 			buildPhases = (
+				F3092D151BD97C4CA41FF54B /* [CP] Check Pods Manifest.lock */,
 				9F750A9D24888D9700BBCC40 /* Sources */,
 				9F750A9E24888D9700BBCC40 /* Frameworks */,
 				9F750A9F24888D9700BBCC40 /* Resources */,
+				016105B98C878F3C2ED7CBD0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +170,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		016105B98C878F3C2ED7CBD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WWChartsDemo/Pods-WWChartsDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3092D151BD97C4CA41FF54B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WWChartsDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F750A9D24888D9700BBCC40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9F750AA924888D9700BBCC40 /* ViewController.swift in Sources */,
+				9F750ABA248891BE00BBCC40 /* L1ViewController.swift in Sources */,
 				9F750AA524888D9700BBCC40 /* AppDelegate.swift in Sources */,
 				9F750AA724888D9700BBCC40 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +360,7 @@
 		};
 		9F750AB624888D9B00BBCC40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40464C773955B9B09764F1E1 /* Pods-WWChartsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +379,7 @@
 		};
 		9F750AB724888D9B00BBCC40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C34533AEA655F6074A1E36AB /* Pods-WWChartsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
