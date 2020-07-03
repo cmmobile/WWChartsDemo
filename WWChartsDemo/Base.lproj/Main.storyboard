@@ -25,10 +25,36 @@
                                     <segue destination="qrU-c4-BHw" kind="show" id="JFX-e1-QYX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aaa-A6-W9V">
+                                <rect key="frame" x="9" y="108" width="140" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="2.圖表資料建構">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BAr-ks-Jvk" kind="show" id="R5i-Lb-Chz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSa-Ua-057">
+                                <rect key="frame" x="9" y="152" width="198" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="3.CombinedChartView">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ld3-2M-hlv" kind="show" id="FJS-UR-jpw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ek9-1U-yAf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9" id="5xR-oI-aKy"/>
+                            <constraint firstItem="Aaa-A6-W9V" firstAttribute="leading" secondItem="ek9-1U-yAf" secondAttribute="leading" id="NGx-5v-lqq"/>
+                            <constraint firstItem="Aaa-A6-W9V" firstAttribute="top" secondItem="ek9-1U-yAf" secondAttribute="bottom" constant="8" id="QQS-S1-pzd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ek9-1U-yAf" secondAttribute="trailing" symbolic="YES" id="SOr-oy-yIB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Aaa-A6-W9V" secondAttribute="trailing" symbolic="YES" id="Tq0-cX-9Y3"/>
+                            <constraint firstItem="pSa-Ua-057" firstAttribute="top" secondItem="Aaa-A6-W9V" secondAttribute="bottom" constant="8" id="X6R-SC-OV1"/>
+                            <constraint firstItem="pSa-Ua-057" firstAttribute="leading" secondItem="Aaa-A6-W9V" secondAttribute="leading" id="aL3-EN-6h4"/>
                             <constraint firstItem="ek9-1U-yAf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="v2F-cb-GFk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -81,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8DK-MI-y6u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1839.2" y="-211.84407796101951"/>
+            <point key="canvasLocation" x="1943" y="-328"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4dt-A6-SUT">
@@ -101,6 +127,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BKe-bc-Wdy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="125.59999999999999" y="68.815592203898049"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3Nu-wF-EJu">
+            <objects>
+                <viewController id="BAr-ks-Jvk" customClass="L2ViewController" customModule="WWChartsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V0Q-0e-Tcl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2FB-Ko-F4E" customClass="CandleStickChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="56" width="343" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Efl-hD-fXW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2FB-Ko-F4E" firstAttribute="top" secondItem="yk3-vr-iph" secondAttribute="top" constant="12" id="4eU-uc-bas"/>
+                            <constraint firstItem="2FB-Ko-F4E" firstAttribute="leading" secondItem="yk3-vr-iph" secondAttribute="leading" constant="16" id="RjG-zH-lab"/>
+                            <constraint firstItem="yk3-vr-iph" firstAttribute="trailing" secondItem="2FB-Ko-F4E" secondAttribute="trailing" constant="16" id="thF-nM-Rcd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yk3-vr-iph"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hxU-fV-nGt"/>
+                    <connections>
+                        <outlet property="chart" destination="2FB-Ko-F4E" id="xZa-an-nbY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="57D-cz-XQ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2601" y="-329"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6aA-eZ-ZyM">
+            <objects>
+                <viewController id="ld3-2M-hlv" customClass="L3ViewController" customModule="WWChartsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ykT-cK-27R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zV-4f-n96" customClass="CombinedChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="56" width="343" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="tcO-rq-cYH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NHA-bQ-ncj" firstAttribute="trailing" secondItem="8zV-4f-n96" secondAttribute="trailing" constant="16" id="0Jr-mB-4FO"/>
+                            <constraint firstItem="8zV-4f-n96" firstAttribute="top" secondItem="NHA-bQ-ncj" secondAttribute="top" constant="12" id="EsM-EM-8zN"/>
+                            <constraint firstItem="8zV-4f-n96" firstAttribute="leading" secondItem="NHA-bQ-ncj" secondAttribute="leading" constant="16" id="SE9-JN-DZF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NHA-bQ-ncj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RmV-lA-X4g"/>
+                    <connections>
+                        <outlet property="chart" destination="8zV-4f-n96" id="QUC-PX-DsL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UCI-om-akU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3319" y="-330"/>
         </scene>
     </scenes>
 </document>

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5ED2BDC82804142E129CFEF6 /* Pods_WWChartsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F833BF93F4812AB56BBDA10E /* Pods_WWChartsDemo.framework */; };
+		9F069CCD249776670043FBC8 /* L2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F069CCC249776660043FBC8 /* L2ViewController.swift */; };
+		9F28A37324AEE9D000285F71 /* L3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28A37224AEE9CF00285F71 /* L3ViewController.swift */; };
 		9F750AA524888D9700BBCC40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F750AA424888D9700BBCC40 /* AppDelegate.swift */; };
 		9F750AA724888D9700BBCC40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F750AA624888D9700BBCC40 /* SceneDelegate.swift */; };
 		9F750AA924888D9700BBCC40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F750AA824888D9700BBCC40 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		40464C773955B9B09764F1E1 /* Pods-WWChartsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWChartsDemo.debug.xcconfig"; path = "Target Support Files/Pods-WWChartsDemo/Pods-WWChartsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9F069CCC249776660043FBC8 /* L2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L2ViewController.swift; sourceTree = "<group>"; };
+		9F28A37224AEE9CF00285F71 /* L3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L3ViewController.swift; sourceTree = "<group>"; };
 		9F750AA124888D9700BBCC40 /* WWChartsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWChartsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F750AA424888D9700BBCC40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F750AA624888D9700BBCC40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +48,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F069C78249772350043FBC8 /* L2 */ = {
+			isa = PBXGroup;
+			children = (
+				9F069CCC249776660043FBC8 /* L2ViewController.swift */,
+			);
+			path = L2;
+			sourceTree = "<group>";
+		};
+		9F28A37124AEE9B900285F71 /* L3 */ = {
+			isa = PBXGroup;
+			children = (
+				9F28A37224AEE9CF00285F71 /* L3ViewController.swift */,
+			);
+			path = L3;
+			sourceTree = "<group>";
+		};
 		9F750A9824888D9700BBCC40 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +85,8 @@
 		9F750AA324888D9700BBCC40 /* WWChartsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9F28A37124AEE9B900285F71 /* L3 */,
+				9F069C78249772350043FBC8 /* L2 */,
 				9F750AB8248891B000BBCC40 /* L1 */,
 				9F750AA424888D9700BBCC40 /* AppDelegate.swift */,
 				9F750AA624888D9700BBCC40 /* SceneDelegate.swift */,
@@ -219,6 +241,8 @@
 				9F750ABA248891BE00BBCC40 /* L1ViewController.swift in Sources */,
 				9F750AA524888D9700BBCC40 /* AppDelegate.swift in Sources */,
 				9F750AA724888D9700BBCC40 /* SceneDelegate.swift in Sources */,
+				9F069CCD249776670043FBC8 /* L2ViewController.swift in Sources */,
+				9F28A37324AEE9D000285F71 /* L3ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +390,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 52W935AVL3;
 				INFOPLIST_FILE = WWChartsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,6 +410,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 52W935AVL3;
 				INFOPLIST_FILE = WWChartsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
