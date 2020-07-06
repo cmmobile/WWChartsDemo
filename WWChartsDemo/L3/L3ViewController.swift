@@ -19,6 +19,7 @@ class L3ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getKlineData()
+        getLineData()
         setupChart()
         setData()
         setDateLine()
@@ -39,6 +40,7 @@ class L3ViewController: UIViewController {
         
         xAxis.drawGridLinesEnabled = false
         
+        chart.xAxis.axisMinimum = -0.5
     }
     
     // MARK: - API Sample
@@ -47,10 +49,14 @@ class L3ViewController: UIViewController {
         var datas: [LineData] = []
         for i in 1...5 {
             let number = Double(i) * 10
-            let data = LineData(time: "\(i)月", price: number - 1)
+//            let data = LineData(time: "\(i)月", price: number - 1)
+            
+            //axisDependency介紹
+            let data = LineData(time: "\(i)月", price: (number - 1)/100)
             datas.append(data)
         }
         self.lineDatas = datas
+        chart.xAxis.axisMaximum = Double(lineDatas.count) - 0.5
     }
     
     private func getKlineData() {
@@ -68,6 +74,7 @@ class L3ViewController: UIViewController {
     private func setData() {
         let data = CombinedChartData()
         data.candleData = getCData()
+        data.lineData = getLData()
         chart.data = data
     }
     
@@ -89,6 +96,26 @@ class L3ViewController: UIViewController {
     
     // MARK: - Line
     
+    private func getLData() -> LineChartData {
+        var enties: [ChartDataEntry] = []
+        for (i, data) in lineDatas.enumerated() {
+            let e = ChartDataEntry(x: Double(i), y: data.price)
+            enties.append(e)
+        }
+        let set1 = setLDataSet(enties: enties)
+        let cData = LineChartData(dataSet: set1)
+        return cData
+    }
+    
+    private func setLDataSet(enties: [ChartDataEntry]) -> LineChartDataSet {
+        let dataset = LineChartDataSet(entries: enties, label: nil)
+        dataset.axisDependency = .left
+        dataset.colors = [.yellow]
+        dataset.drawCirclesEnabled = false
+        dataset.drawValuesEnabled = false
+        return dataset
+    }
+    
     // MARK: - Candle
     
     private func getCData() -> CandleChartData {
@@ -104,6 +131,7 @@ class L3ViewController: UIViewController {
     
     private func setCDataSet(enties: [CandleChartDataEntry]) -> CandleChartDataSet {
         let dataset = CandleChartDataSet(entries: enties, label: nil)
+        dataset.axisDependency = .right
         dataset.decreasingColor = .green
         dataset.increasingColor = .red
         dataset.decreasingFilled = true
